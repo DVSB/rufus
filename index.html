@@ -1,100 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-
-  <title>pbatard/rufus @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #3f4555;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #c0baaa; }
-    h3 { text-align: center; color: #c0baaa; }
-    a { color: #c0baaa; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+	<meta charset='utf-8'>
+	<title>pbatard/rufus @ GitHub</title>
+	<style type="text/css">
+		body {
+			margin-top: 1.0em;
+			background-color: #3f4555;
+			font-family: Helvetica, Arial, FreeSans, san-serif;
+			color: #ffffff;
+		}
+		#container {
+			margin: 0 auto;
+			width: 700px;
+		}
+		h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #c0baaa; }
+		h3 { text-align: center; color: #c0baaa; }
+		a { color: #c0baaa; }
+		.tagline { font-size: 1.6em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+		.download { float: right; }
+		pre { background: #000; color: #fff; padding: 15px;}
+		hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+		.footer { font-size: 0.9em; text-align:center; padding-top:30px; font-style: italic; }
+	</style>
 </head>
 
 <body>
-  <a href="https://github.com/pbatard/rufus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/pbatard/rufus/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/pbatard/rufus/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/pbatard/rufus">rufus</a>
-      <span class="small">by <a href="https://github.com/pbatard">pbatard</a></span></h1>
-
-    <div class="description">
-      The Reliable USB Formatting Utility
-    </div>
-
-    
-      <p>The Reliable USB Formatting Utility</p>
-    
-
-    
-
-    
-      <h2>Install</h2>
-      <p>Download the exe and run it - no installation is necessary.
-
-You will be prompted for elevation on Windows platforms with UAC, as the program requires administrative access to be able to format USB drives.
-
-The downloadable executable from this site is signed, and generated exactly as described with 'make release' on MinGW32, so you can have some confidence that, even if it requires elevated privileges, it won't be trying to do anything malicious.</p>
-    
-
-    
-      <h2>License</h2>
-      <p>GNU General Public License (GPL) version 3 or later</p>
-    
-
-    
-      <h2>Authors</h2>
-      <p>Pete Batard (pete@akeo.ie)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Pete Batard (pete@akeo.ie)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/pbatard/rufus/zipball/master">zip</a> or
-      <a href="https://github.com/pbatard/rufus/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/pbatard/rufus</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/pbatard/rufus">pbatard/rufus</a>
-    </div>
-
-  </div>
-
+	<a href="https://github.com/pbatard/rufus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+	<div id="container">
+		<h1><img border="0" src="http://files.softicons.com/download/computer-icons/icons-unleashed-vol-1-by-pc-unleashed/png/128/09-usb.png" />
+		<a href="https://github.com/pbatard/rufus">rufus</a></h1>
+		<div class="tagline">
+			The Reliable USB Formatting Utility (with Source)
+		</div>
+			<h2>Description</h2>
+			<p>Rufus is a small utility that helps format and create DOS bootable USB flash drives, such as USB keys, USB memory sticks, etc.</p>
+			<p>It can be be especially useful for cases where:
+				<ul>
+					<li>you need to flash a BIOS or other firmware using a DOS utlity</li>
+					<li>you need to work on a system that doesn't have an OS installed</li>
+					<li>you want to run a specific DOS application</li>
+				</ul>
+			</p>
+			<p>Despite its very small size (less than 100 KB), it provides you with everything you need.</p>
+			<img border="0" src="https://github.com/pbatard/rufus/wiki/rufus.png" />
+			<h2>System Requirements</h2>
+			Any version of Windows, from Windows XP. 32 or 64 bit doesn't matter.<br />If elevation is needed, you will be automatically prompted for it.
+			<h2>Usage</h2>
+			<p>Download the executable and run it - no other installation is necessary!</p>
+			<p>Note that the executable is digitally signed, and was produced in a 100% transparent manner (see 'make release' in the source). Thus, as long as the signature states "Pete Batard - Open Source Developer", you can have confidence that it won't be trying to do anything malicious.</p>
+			<h2>License</h2>
+			<p>GNU General Public License (GPL) version 3 or later.<br />You are free to distribute, modify or even sell the software, as long as you respect the GPLv3 license.</p>
+			<h2>Feedback, Bugs or Enhancement Requests</h2>
+			<p>Please use the github <a href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">e-mail the author</a> directly.</p>
+			<h2>Versions</h2>
+			<ul>
+				<li>Version 1.0.3:<ul>
+					<li>First public release</li>
+					<li>Progress bar improvements</li>
+				</ul></li>
+				<li>Version 1.0.2:<ul>
+					<li>Beta release</li>
+					<li>Added badblocks support</li>
+				</ul></li>
+				<li>Version 1.0.1:<ul>
+					<li>Alpha release</li>
+				</ul></li>
+			</ul></p>
+			<h2>Download</h2>
+			<p>The latest version of rufus can be downloaded <a href="https://github.com/downloads/pbatard/rufus/rufus.exe">here</a>.<br/>
+				Note that the program doesn't require an installer: once downloaded, it is ready to run!</p>
+			<p>Alternatively, if you would prefer to recompile the program from source, you can clone the <a href="http://git-scm.com">git</a> repository using:
+				<pre>$ git clone git://github.com/pbatard/rufus</pre>
+				More information on how to access and compile the source can also be found at the <a href="https://github.com/pbatard/rufus">github project</a>. You are very much welcome to clone it, modify it and then submit patches back to add the features you want!
+			</p>
+		<div class="footer">
+		Copyright (c) 2011 - Pete Batard<br/>
+		USB icon by <a href="http://pcunleashed.com/">PC Unleashed</a>			
+		</div>
+	</div>
 </body>
 </html>
