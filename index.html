@@ -34,45 +34,48 @@
 		<h1><img border="0" src="usb-icon.png" />
 		<a href="https://github.com/pbatard/rufus">rufus</a></h1>
 		<div class="tagline">
-			The Reliable USB Formatting Utility (with Source)
+			Create DOS Bootable USB drives the easy way
 		</div>
 			<h2>Description</h2>
-			<p>Rufus is a small utility that helps format and create DOS bootable USB flash drives, such as USB keys, USB memory sticks, etc.</p>
+			<p>Rufus is a small utility that helps format and create DOS bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
 			<p>It can be be especially useful for cases where:
 				<ul>
-					<li>you need to flash a BIOS or other firmware using a DOS utlity</li>
+					<li>you need to flash a BIOS or other firmware using from DOS</li>
 					<li>you need to work on a system that doesn't have an OS installed</li>
-					<li>you want to run a specific DOS application</li>
+					<li>you want to run one of the many DOS low-level utilities</li>
 				</ul>
 			</p>
-			<p>Despite its very small size (less than 100 KB), it provides you with everything you need.</p>
+			<p>Despite its very small size (less than 100 KB), Rufus will provide you with everything you need.</p>
 			<img border="0" src="https://github.com/pbatard/rufus/wiki/rufus.png" />
 			<h2>System Requirements</h2>
-			Any version of Windows, from Windows XP. 32 or 64 bit doesn't matter.<br />If elevation is needed, you will be automatically prompted for it.
+			Windows XP or later. 32 or 64 bit doesn't matter; Rufus works fine on both.<br />If elevation is required, you will be prompted for it.
 			<h2>Usage</h2>
-			<p>Download the executable and run it - no other installation is necessary!</p>
-			<p>Note that the executable is digitally signed, and was produced in a 100% transparent manner (see 'make release' in the source). Thus, as long as the signature states "Pete Batard - Open Source Developer", you can have confidence that it won't be trying to do anything malicious.</p>
+			<p>Download the executable and run it - no installation is necessary.</p>
+			<p>The executable is digitally signed and is produced in a 100% transparent manner, from its <a href="https://github.com/pbatard/rufus">publicly available source</a>, using a <a href="http://www.mingw.org">MinGW32</a> environment.<br />
+				Tthe signature should state <i>"Pete Batard - Open Source Developer"</i>.</p>
 			<h2>License</h2>
-			<p>GNU General Public License (GPL) version 3 or later.<br />You are free to distribute, modify or even sell the software, as long as you respect the GPLv3 license.</p>
+			<p>GNU General Public License (GPL) version 3 or later.<br />You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.</p>
 			<h2>Feedback, Bugs or Enhancement Requests</h2>
 			<p>Please use the github <a href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">e-mail the author</a> directly.</p>
 			<h2>Versions</h2>
 			<ul>
 				<li>Version 1.0.3:<ul>
 					<li>First public release</li>
-					<li>Progress bar improvements</li>
+					<li>Progress status improvements</li>
+					<li>Filtering of invalid cluster sizes</li>
+					<li>Disable Autoplay on Vista and later while the application is running</li>
 				</ul></li>
 				<li>Version 1.0.2:<ul>
 					<li>Beta release</li>
-					<li>Added badblocks support</li>
+					<li>Support for bad blocks check</li>
 				</ul></li>
 				<li>Version 1.0.1:<ul>
 					<li>Alpha release</li>
 				</ul></li>
 			</ul></p>
 			<h2>Download</h2>
-			<p>The latest version of rufus can be downloaded <a href="https://github.com/downloads/pbatard/rufus/rufus.exe">here</a>.<br/>
-				Note that the program doesn't require an installer: once downloaded, it is ready to run!</p>
+			<p>The latest version of rufus can be downloaded <a href="https://github.com/downloads/pbatard/rufus/rufus.exe">here</a>.<br />
+				Once downloaded, it is ready to use.</p>
 			<p>Alternatively, if you would prefer to recompile the program from source, you can clone the <a href="http://git-scm.com">git</a> repository using:
 				<pre>$ git clone git://github.com/pbatard/rufus</pre>
 				More information on how to access and compile the source can also be found at the <a href="https://github.com/pbatard/rufus">github project</a>. You are very much welcome to clone it, modify it and then submit patches back to add the features you want!
