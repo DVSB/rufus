@@ -3,7 +3,7 @@
 <head profile="http://www.w3.org/2005/10/profile">
 <link rel="icon" type="image/png" href="http://pbatard.github.com/rufus/favicon.png">
 	<meta charset='utf-8'>
-	<title>Rufus - Create DOS bootable USB drives</title>
+	<title>Rufus - Create bootable USB drives</title>
 	<style type="text/css">
 		body {
 			margin-top: 1.0em;
@@ -14,6 +14,27 @@
 		#container {
 			margin: 0 auto;
 			width: 700px;
+		}
+		table.reference
+		{
+		color: #000030;
+		background-color:#ffffff;
+		border:1px solid #c3c3c3;
+		border-collapse:collapse;
+		width:100%;
+		}
+		table.reference th
+		{
+		background-color:#e5eecc;
+		border:1px solid #c3c3c3;
+		padding:3px;
+		vertical-align:top;
+		}
+		table.reference td 
+		{
+		border:1px solid #c3c3c3;
+		padding:3px;
+		vertical-align:top;
 		}
 		h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; }
 		h1 .small { font-size: 0.4em; }
@@ -35,27 +56,28 @@
 		<h1><img border="0" src="http://pbatard.github.com/rufus/usb-icon.png" />
 		<a href="https://github.com/pbatard/rufus">rufus</a></h1>
 		<div class="tagline">
-			Creating DOS Bootable USB drives the easy way
+			Creating bootable USB drives the easy way
 		</div>
 			<h2>Description</h2>
 			<img border="0" src="http://pbatard.github.com/rufus/rufus.png" />
-			<p>Rufus is a small utility that helps format and create DOS bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
+			<p>Rufus is a small utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
 			<p>It can be be especially useful for cases where:
 				<ul>
-					<li>you need to flash a BIOS or other firmware from DOS</li>
+					<li>you need to create USB installation media, such as a Windows 7 installation USB drive</li>
 					<li>you need to work on a system that doesn't have an OS installed</li>
+					<li>you need to flash a BIOS or other firmware from DOS</li>
 					<li>you want to run a DOS low-level utility</li>
 				</ul>
 			</p>
-			<p>Recent versions of Rufus also attempt to detect and set up the keyboard layout for you.</p>
 			<p>Despite its small size, Rufus provides you with everything you need!</p>
-			<p>Please also note that once formatted, your drive is still usable to transfer data: Windows will read and write to it just fine and it doesn't need to be dedicated for DOS boot only.</p>
+			<p>Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a href="http://unetbootin.sourceforge.net/">UNetbootin</a> or <a href="http://www.microsoftstore.com/store/msstore/html/pbPage.Help_Win7_usbdvd_dwnTool">Windows 7 USB/DVD download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO <a href="#ref1"><sup>(1)</sup></a>.</p>
+			<p>Finally, please remember that once formatted, your drive is still usable as before to transfer data: it doesn't have to be dedicated for DOS or installation only.</p>
 			<h2>Download</h2>
 			<p>Two versions of Rufus are provided for your convenience: one with <a href="http://www.freedos.org">FreeDOS</a> support and one without.</p>
-			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.0.6f.exe">Rufus v1.0.6 with FreeDOS support</a> (347 KB).</li>
-				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.0.6.exe">Rufus v1.0.6 <b>without</b> FreeDOS support</a> (86 KB).</li>
-				<li><a href="https://github.com/pbatard/rufus/downloads">Older versions</a>.</li></ul></p>
-			<p>Apart from the ability to select FreeDOS rather than the default Microsoft DOS, these versions are exactly the same. If you use a non-US keyboard, FreeDOS is recommended as it supports more more keyboard layouts. In both cases, Rufus will try to set the keyboard locale for you.</p>
+			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.0.7f.exe">Rufus v1.0.7 with FreeDOS support</a> (346 KB), or <a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.0f.exe">v1.1.0 Beta</a> (with ISO support, 376 KB).</li>
+				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.0.7.exe">Rufus v1.0.7 <b>without</b> FreeDOS support</a> (85 KB), or <a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.0.exe">v1.1.0 Beta</a> (with ISO support, 114 KB).</li>
+				<li><a href="https://github.com/pbatard/rufus/downloads">Other versions</a>.</li></ul></p>
+			<p>Apart from the ability to select FreeDOS rather than the default Microsoft DOS, these versions are exactly the same. If you use a non-US keyboard, FreeDOS is recommended as it supports more more keyboard layouts. In both cases, if you choose DOS, Rufus will try to set the keyboard locale for you.</p>
 			<p>Once downloaded, the application is ready to use &mdash; no installation or other files are necessary.</p>
 			<h2>System Requirements</h2>
 			Windows XP or later, 32 or 64 bit doesn't matter.<br />If elevation is required, you will be prompted for it.
@@ -69,6 +91,14 @@
 			<p>Please use the github <a href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
 			<h2>Versions</h2>
 			<ul>
+				<li>Version 1.1.0 Beta (2012.02.08):<ul>
+					<li>ISO image support (NTFS, bootmgr only - targeted at Windows installation ISOs)</li>
+				</ul></li>
+				<li>Version 1.0.7 (2012.02.02):<ul>
+					<li>Fixes a detection issue on <a href="https://github.com/pbatard/rufus/issues/32#issuecomment-3782174">platforms with multiple optical drives</a> (with thanks to <b>ElGaton</b>)</li>
+					<li>Add number of passes for bad blocks check</li>
+					<li>Improved locale selection for FreeDOS</li>
+				</ul></li>				
 				<li>Version 1.0.6 (2012.01.03):<ul>
 					<li>Log report when bad blocks are found</li>
 				</ul></li>
@@ -102,10 +132,20 @@
 			<p>The following is a list of feature(s) that <b>may</b> be added in a next version of Rufus.<br />
 			Suggestions are also welcome.
 				<ul>
+					<li>Linux ISO support, with Syslinux/Isolinux</li>
 					<li>Allow the preservation of existing partitions</li>
-				<ul>
+				</ul>
 			</p>
-		<div class="footer">
+			<a name="ref1">&nbsp;</a>
+			<h2>(1) Speed comparison between Rufus and other applications</h2>
+			<p>The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM platform, with an USB 3.0 controller and a <a href="http://www.adata.com.tw/?action=product_feature&cid=1&piid=119">16 GB USB 3.0 ADATA S102 flash drive</a>.<br />
+			The ISO image was <i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i> from the MSDN.
+			<table class="reference" style="width:70%">
+			<tr><td>Windows 7 USB/DVD Download Tool v1.0.30</td><td>8 mins 10s</td></tr>
+			<tr><td>UNetbootin v1.1.1.1</td><td>6 mins 20s</td></tr>
+			<tr><td><b>Rufus v1.1.0</b></td><td><b>3 mins 25s</b></td></tr>
+			</table></p>
+ 		<div class="footer">
 		Copyright (c) 2011-2012 Pete Batard<br/>
 		USB icon by <a href="http://pcunleashed.com/">PC Unleashed</a>
 		</div>
