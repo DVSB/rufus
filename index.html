@@ -133,10 +133,11 @@
 				</ul></li>
 			</ul></p>
 			<h2>Source</h2>
-			<p>Alternatively, if you would prefer to recompile the program from source, you can clone the <a href="http://git-scm.com">git</a> repository using:
-				<pre>$ git clone git://github.com/pbatard/rufus</pre>
-				More information on how to access and compile the source can also be found at the <a href="https://github.com/pbatard/rufus">github project</a>.<br />
-				If you are a developer, you are very much encouraged to tinker with it and submit patches to add the features you want!
+				<p><ul><li><a href="https://github.com/pbatard/rufus/zipball/v1.1.2">Rufus v1.1.2 source</a> (816 KB)</li>
+				<li>Alternatively, you can clone the <a href="http://git-scm.com">git</a> repository using:
+				<pre>$ git clone git://github.com/pbatard/rufus</pre></li>
+				<li>For more information, see the <a href="https://github.com/pbatard/rufus">github project</a>.</li></ul>
+				If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.
 			</p>
 			<a name="ref1">&nbsp;</a>
 			<h2>(1) Speed comparison between Rufus and other applications</h2>
@@ -164,12 +165,10 @@
 			<a name="ref2">&nbsp;</a>
 			<h2>(2) Non exhaustive list of ISOs Rufus is known to work with</h2>
 			<p><a href="http://www.archlinux.org/">Arch Linux</a>, <a href="http://archbang.org/">Archbang</a>, <a href="http://www.centos.org/">CentOS</a>, <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a>, <a href="http://fedoraproject.org/">Fedora</a>, <a href="http://www.freedos.org/">FreeDOS</a>, <a href="http://www.gentoo.org/">Gentoo</a>, <a href="http://www.gnewsense.org/">gNewSense</a>, <a href="http://www.hiren.info/pages/bootcd">Hiren's Boot CD</a>, <a href="http://knoppix.net/">Knoppix</a>, <a href="http://www.kubuntu.org/">Kubuntu</a>, <a href="http://pogostick.net/~pnh/ntpasswd/">NT Password Registry Editor</a>, <a href="http://www.opensuse.org/">OpenSUSE</a>, <a href="http://www.slackware.com/">Slackware</a>, <a href="https://tails.boum.org/">Tails</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.ultimatebootcd.com/">Ultimate Boot CD</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows 7</a>, <a href="http://msdn.microsoft.com/en-us/windows/apps/br229516">Windows 8 Developer Preview</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Vista</a>, etc.</p>
-			<p><a href="http://linuxmint.com/">Linux Mint</a>, <a href="http://trinityhome.org/">Trinity Rescue Kit</a> and possibly other ISOs may produce an error about incompatible vesamenu.c32. This is due to these distributions using an obsolete versions of isolinux/syslinux.<br/>
-			One <a href="http://www.linuxquestions.org/questions/linux-mint-84/trying-to-boot-linux-mint-9-from-usb-flash-drive-vesamenu-c32-not-a-com32r-image-829397/#post4210083">workaround</a>, is to press 'Tab' to get a list of menu options.<br />
-			A better workaround is to download the <a href="http://www.kernel.org/pub/linux/utils/boot/syslinux/">latest Syslinux</a> and replace vesamenu.c32 on the drive with the one found in /com32/menu/.</p>
+			<p><a href="http://linuxmint.com/">Linux Mint</a> and <a href="http://trinityhome.org/">Trinity Rescue Kit</a> currently produce an error about incompatible vesamenu.c32. This is because these distributions use an obsolete versions of isolinux/syslinux. If you use these, ISOs you should download the <a href="http://www.kernel.org/pub/linux/utils/boot/syslinux/">latest Syslinux</a> and replace vesamenu.c32 on the target with the one from /com32/menu/. Or you can simply press Tab during boot, to see the menu options.</p>
 		</div>
  		<div class="footer">
-		Copyright (c) 2011-2012 Pete Batard<br/>
+		Copyright (c) 2011-2012 <a href="http://pete.akeo.ie">Pete Batard</a><br/>
 		USB icon by <a href="http://pcunleashed.com/">PC Unleashed</a>
 		</div>
 	</div>
