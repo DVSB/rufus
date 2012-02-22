@@ -70,13 +70,13 @@
 				</ul>
 			</p>
 			<p>Despite its small size, Rufus provides you with everything you need!</p>
-			<p>Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a href="http://unetbootin.sourceforge.net/">UNetbootin</a>, <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a> or <a href="http://www.microsoftstore.com/store/msstore/html/pbPage.Help_Win7_usbdvd_dwnTool">Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs <a href="#ref1"><sup>(1)</sup></a>.<br/>
-			A non exhaustive list of the installation media Rufus can support is provided at the end of this page <a href="#ref2"><sup>(2)</sup></a>.</p>
+			<p>Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a href="http://unetbootin.sourceforge.net/">UNetbootin</a>, <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a> or <a href="http://www.microsoftstore.com/store/msstore/html/pbPage.Help_Win7_usbdvd_dwnTool">Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO (with honorable mention to <a href="http://www.wintobootic.com/">WiNToBootic</a> for managing to keep up). It is also marginally faster on the creation of Linux bootable USB from ISOs <a href="#ref1"><sup>(1)</sup></a>.<br/>
+			A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page <a href="#ref2"><sup>(2)</sup></a>.</p>
 			<p>Finally, please remember that once formatted, your drive is still usable as before to transfer data: it doesn't have to be dedicated for DOS or installation only.</p>
 			<h2>Download</h2>
 			<p>Two versions of Rufus are provided for your convenience: one with <a href="http://www.freedos.org">FreeDOS</a> support and one without.</p>
-			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.1f.exe">Rufus v1.1.1 with FreeDOS support</a> (410 KB)</li>
-				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.1.exe">Rufus v1.1.1 <b>without</b> FreeDOS support</a> (148 KB)</li>
+			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.2f.exe">Rufus v1.1.2 with FreeDOS support</a> (407 KB)</li>
+				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.2.exe">Rufus v1.1.2 <b>without</b> FreeDOS support</a> (145 KB)</li>
 				<li><a href="https://github.com/pbatard/rufus/downloads">Other versions</a></li></ul></p>
 			<p>Apart from the ability to select FreeDOS rather than the default Microsoft DOS, these versions are exactly the same. If you use a non-US keyboard, FreeDOS is recommended as it supports more more keyboard layouts. In both cases, if you choose DOS, Rufus will try to set the keyboard locale for you.<br />
 			If you use plan to use ISO images only, any version will do.</p>
@@ -93,6 +93,10 @@
 			<p>Please use the github <a href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
 			<h2>Versions</h2>
 			<ul>
+				<li>Version 1.1.2 (2012.02.22):<ul>
+					<li>Fixes ISO support for Fedora, openSUSE and Hiren's Boot CD</li>
+					<li>Add icon and extended/international label support</li>
+				</ul></li>	
 				<li>Version 1.1.1 (2012.02.16):<ul>
 					<li>ISO image support (syslinux) - targeted at Linux installation ISOs</li>
 					<li>ISO fixes and UI improvements</li>
@@ -142,6 +146,7 @@
 			<tr><td width="80%">Windows 7 USB/DVD Download Tool v1.0.30</td><td>8 mins 10s</td></tr>
 			<tr><td>Universal USB Installer v1.8.7.5</td><td>7 mins 10s</td></tr>
 			<tr><td>UNetbootin v1.1.1.1</td><td>6 mins 20s</td></tr>
+			<tr><td>WiNToBootic v1.2</td><td>3 mins 35s</td></tr>
 			<tr><td><b>Rufus v1.1.1</b></td><td><b>3 mins 25s</b></td></tr>
 			</table></p>
 			<p>&bull; Ubuntu 11.10 x86: <i>ubuntu-11.10-desktop-i386.iso</i>
@@ -157,10 +162,12 @@
 			<tr><td><b>Rufus v1.1.1</b></td><td><b>20 mins 15s</b></td></tr>
 			</table></p>
 			<a name="ref2">&nbsp;</a>
-			<h2>(2) Non exhaustive list of ISOs Rufus has been tested with</h2>
-			<p>Windows Vista, Windows 7, <a href="http://msdn.microsoft.com/en-us/windows/apps/br229516">Windows 8 Developer Preview<a/>, <a href="http://www.slackware.com/">Slackware</a>, <a href="http://www.archlinux.org/">Arch Linux<a/>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.ultimatebootcd.com/">Ultimate Boot CD<a/>, <a href="http://www.freedos.org/">FreeDOS<a/>, <a href="http://pogostick.net/~pnh/ntpasswd/">NT Password Registry Editor</a>, <a href="http://www.centos.org/">CentOS</a>, <a href="http://linuxmint.com/">Linux Mint</a> (using <a href="http://www.linuxquestions.org/questions/linux-mint-84/trying-to-boot-linux-mint-9-from-usb-flash-drive-vesamenu-c32-not-a-com32r-image-829397/#post4210083">this workaround</a>), etc.</br>
-			There are known <a href="https://github.com/pbatard/rufus/issues/40">minor issues</a> with <a href="http://www.hiren.info/pages/bootcd">Hiren's Boot CD</a> as well as <a href="http://www.opensuse.org/">OpenSUSE</a>, which should be fixed in next version.</br>
-			<a href="http://fedoraproject.org/">Fedora</a> and possibly other Red Hat derivatives may not work with Rufus, because they use /dev/disk/by-label during the installation process to locate the installation media, and the label they expect is not one that can meet the FAT constraints (11 characters, uppercase). We have <a href="https://bugzilla.redhat.com/show_bug.cgi?id=794821">reported</a> this behaviour to Fedora so that their future distributions can address it.</p>
+			<h2>(2) Non exhaustive list of ISOs Rufus is known to work with</h2>
+			<p><a href="http://www.archlinux.org/">Arch Linux</a>, <a href="http://archbang.org/">Archbang</a>, <a href="http://www.centos.org/">CentOS</a>, <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a>, <a href="http://fedoraproject.org/">Fedora</a>, <a href="http://www.freedos.org/">FreeDOS</a>, <a href="http://www.gentoo.org/">Gentoo</a>, <a href="http://www.gnewsense.org/">gNewSense</a>, <a href="http://www.hiren.info/pages/bootcd">Hiren's Boot CD</a>, <a href="http://knoppix.net/">Knoppix</a>, <a href="http://www.kubuntu.org/">Kubuntu</a>, <a href="http://pogostick.net/~pnh/ntpasswd/">NT Password Registry Editor</a>, <a href="http://www.opensuse.org/">OpenSUSE</a>, <a href="http://www.slackware.com/">Slackware</a>, <a href="https://tails.boum.org/">Tails</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.ultimatebootcd.com/">Ultimate Boot CD</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows 7</a>, <a href="http://msdn.microsoft.com/en-us/windows/apps/br229516">Windows 8 Developer Preview</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Vista</a>, etc.</p>
+			<p><a href="http://linuxmint.com/">Linux Mint</a>, <a href="http://trinityhome.org/">Trinity Rescue Kit</a> and possibly other ISOs may produce an error about incompatible vesamenu.c32. This is due to these distributions using an obsolete versions of isolinux/syslinux.<br/>
+			One <a href="http://www.linuxquestions.org/questions/linux-mint-84/trying-to-boot-linux-mint-9-from-usb-flash-drive-vesamenu-c32-not-a-com32r-image-829397/#post4210083">workaround</a>, is to press 'Tab' to get a list of menu options.<br />
+			A better workaround is to download the <a href="http://www.kernel.org/pub/linux/utils/boot/syslinux/">latest Syslinux</a> and replace vesamenu.c32 on the drive with the one found in /com32/menu/.</p>
+		</div>
  		<div class="footer">
 		Copyright (c) 2011-2012 Pete Batard<br/>
 		USB icon by <a href="http://pcunleashed.com/">PC Unleashed</a>
