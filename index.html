@@ -75,8 +75,8 @@
 			<p>Finally, please remember that once formatted, your drive is still usable as before to transfer data: it doesn't have to be dedicated for DOS or installation only.</p>
 			<h2>Download</h2>
 			<p>Two versions of Rufus are provided for your convenience: one with <a href="http://www.freedos.org">FreeDOS</a> support and one without.</p>
-			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.2f.exe">Rufus v1.1.2 with FreeDOS support</a> (407 KB)</li>
-				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.2.exe">Rufus v1.1.2 <b>without</b> FreeDOS support</a> (145 KB)</li>
+			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.3f.exe">Rufus v1.1.3 with FreeDOS support</a> (407 KB)</li>
+				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.3.exe">Rufus v1.1.3 <b>without</b> FreeDOS support</a> (146 KB)</li>
 				<li><a href="https://github.com/pbatard/rufus/downloads">Other versions</a></li></ul></p>
 			<p>Apart from the ability to select FreeDOS rather than the default Microsoft DOS, these versions are exactly the same. If you use a non-US keyboard, FreeDOS is recommended as it supports more more keyboard layouts. In both cases, if you choose DOS, Rufus will try to set the keyboard locale for you.<br />
 			If you use plan to use ISO images only, any version will do.</p>
@@ -93,6 +93,11 @@
 			<p>Please use the github <a href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
 			<h2>Versions</h2>
 			<ul>
+				<li>Version 1.1.3 (2012.02.24):<ul>
+					<li>Fixes an issue on XP when using Windows ISOs (reported by <b>wimb</b>)</li>
+					<li>Disable listing of fixed drives (eg. HDDs)</li>
+					<li>Add 'fake' USB drive detection during bad blocks check</li>
+				</ul></li>	
 				<li>Version 1.1.2 (2012.02.22):<ul>
 					<li>Fixes ISO support for Fedora, openSUSE and Hiren's Boot CD</li>
 					<li>Add icon and extended/international label support</li>
