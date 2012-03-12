@@ -75,8 +75,8 @@
 			<p>Finally, please remember that once formatted, your drive is still usable as before to transfer data: it doesn't have to be dedicated for DOS or ISO installation only.</p>
 			<h2>Download</h2>
 			<p>Two versions of Rufus are provided for your convenience: one with <a href="http://www.freedos.org">FreeDOS</a> support and one without.</p>
-			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.4f.exe">Rufus v1.1.4 with FreeDOS support</a> (409 KB)</li>
-				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.4.exe">Rufus v1.1.4 <b>without</b> FreeDOS support</a> (148 KB)</li>
+			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.5f.exe">Rufus v1.1.5 with FreeDOS support</a> (412 KB)</li>
+				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.5.exe">Rufus v1.1.5 <b>without</b> FreeDOS support</a> (151 KB)</li>
 				<li><a href="https://github.com/pbatard/rufus/downloads">Other versions</a></li></ul></p>
 			<p>Apart from the ability to select FreeDOS rather than the default Microsoft DOS, these versions are exactly the same. If you use a non-US keyboard, FreeDOS is recommended as it supports more keyboard layouts. In both cases, if you choose DOS, Rufus will try to set the keyboard locale for you.<br />
 			If you use plan to use ISO images only, any version will do.</p>
@@ -93,6 +93,12 @@
 			<p>Please use the github <a href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
 			<h2>Versions</h2>
 			<ul>
+				<li>Version 1.1.5 (2012.03.12):<ul>
+					<li>Fixes detection of devices without friendly name (reported by <b>rschiang</b>)</li>
+					<li>Fixes support of WinPE/AIK ISO images (reported by <b>Dmitry Sokolov</b>)</li>
+					<li>Fixes no disk at launch with empty card readers (reported by <b>ChrisR</b></li>
+					<li>Add download of vesamenu.c32 for ISOs that need it</li>
+				</ul></li>	
 				<li>Version 1.1.4 (2012.03.03):<ul>
 					<li>Fixes ISO support for directories with extended characters (reported by <b>ChrisR</b>)</li>
 					<li>Fixes bad blocks test issues (reported by <b>steve6375</b>)</li>
@@ -178,8 +184,7 @@
 			</table></p>
 			<a name="ref2">&nbsp;</a>
 			<h2>(2) Non exhaustive list of ISOs Rufus is known to work with</h2>
-			<p><a href="http://www.archlinux.org/">Arch Linux</a>, <a href="http://archbang.org/">Archbang</a>, <a href="http://www.centos.org/">CentOS</a>, <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a>, <a href="http://fedoraproject.org/">Fedora</a>, <a href="http://www.freedos.org/">FreeDOS</a>, <a href="http://www.gentoo.org/">Gentoo</a>, <a href="http://www.gnewsense.org/">gNewSense</a>, <a href="http://www.hiren.info/pages/bootcd">Hiren's Boot CD</a>, <a href="http://knoppix.net/">Knoppix</a>, <a href="http://www.kubuntu.org/">Kubuntu</a>, <a href="http://pogostick.net/~pnh/ntpasswd/">NT Password Registry Editor</a>, <a href="http://www.opensuse.org/">OpenSUSE</a>, <a href="http://partedmagic.com/doku.php">Parted Magic</a>, <a href="http://www.slackware.com/">Slackware</a>, <a href="https://tails.boum.org/">Tails</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.ultimatebootcd.com/">Ultimate Boot CD</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows 7</a>, <a href="http://windows.microsoft.com/en-US/windows-8/iso">Windows 8 Consumer Preview</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Vista</a>, etc.</p>
-			<p><a href="http://linuxmint.com/">Linux Mint</a> and <a href="http://trinityhome.org/">Trinity Rescue Kit</a> currently produce an error about incompatible vesamenu.c32. This is because these distributions use an obsolete versions of isolinux/syslinux. If you use these, ISOs you should download the <a href="http://www.kernel.org/pub/linux/utils/boot/syslinux/">latest Syslinux</a> and replace vesamenu.c32 on the target with the one from /com32/menu/. Or you can simply press Tab during boot, to see the menu options.</p>
+			<p><a href="http://www.archlinux.org/">Arch Linux</a>, <a href="http://archbang.org/">Archbang</a>, <a href="http://www.centos.org/">CentOS</a>, <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a>, <a href="http://fedoraproject.org/">Fedora</a>, <a href="http://www.freedos.org/">FreeDOS</a>, <a href="http://www.gentoo.org/">Gentoo</a>, <a href="http://www.gnewsense.org/">gNewSense</a>, <a href="http://www.hiren.info/pages/bootcd">Hiren's Boot CD</a>, <a href="http://knoppix.net/">Knoppix</a>, <a href="http://www.kubuntu.org/">Kubuntu</a>, <a href="http://linuxmint.com/">Linux Mint</a>, <a href="http://pogostick.net/~pnh/ntpasswd/">NT Password Registry Editor</a>, <a href="http://www.opensuse.org/">OpenSUSE</a>, <a href="http://partedmagic.com/doku.php">Parted Magic</a>, <a href="http://www.slackware.com/">Slackware</a>, <a href="https://tails.boum.org/">Tails</a>, <a href="http://trinityhome.org/">Trinity Rescue Kit</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.ultimatebootcd.com/">Ultimate Boot CD</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows 7</a>, <a href="http://windows.microsoft.com/en-US/windows-8/iso">Windows 8 Consumer Preview</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Vista</a>, etc.</p>
 		</div>
  		<div class="footer">
 		Copyright (c) 2011-2012 <a href="http://pete.akeo.ie">Pete Batard</a><br/>
