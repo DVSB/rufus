@@ -6,12 +6,20 @@
 	<title>Rufus - Create bootable USB drives</title>
 	<style type="text/css">
 		body {
-			margin-top: 1.0em;
 			background-color: #3f4555;
 			font-family: Helvetica, Arial, FreeSans, san-serif;
 			color: #ffffff;
 		}
+		#right_column {
+			float: right;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-right: 10px;
+			width: 230px;
+			font-size: 0.8em;
+		}
 		#container {
+			float: center;
 			margin: 0 auto;
 			width: 700px;
 		}
@@ -36,7 +44,7 @@
 		padding:3px;
 		vertical-align:top;
 		}
-		h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; }
+		h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; margin-top: 10px;}
 		h1 .small { font-size: 0.4em; }
 		h1 a { text-decoration: none }
 		h2 { font-size: 1.5em; color: #c0baaa; }
@@ -51,16 +59,23 @@
 </head>
 
 <body>
-	<a href="https://github.com/pbatard/rufus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+<!--	<a href="https://github.com/pbatard/rufus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a> -->
+	<div id="right_column"><center>
+	<p>&nbsp;</p>
+	As a very satisfied VPS customer, the author of this application recommends:<br/>
+	<a href="http://neosurge.com"><img src="http://cdn.neosurge.com/logo_n.gif" alt="Neosurge"/></a><br/>
+	This content is hosted by <a href="http://neosurge.com">Neosurge</a>.
+	</center></div>
+
 	<div id="container">
-		<h1><img border="0" src="http://pbatard.github.com/rufus/usb-icon.png" />
+		<h1><img border="0" src="http://pbatard.github.com/rufus/usb-icon.png" alt="rufus icon"/>
 		<a href="https://github.com/pbatard/rufus">rufus</a></h1>
 		<div class="tagline">
 			Creating bootable USB drives the easy way
 		</div>
 			<h2>Description</h2>
-			<img border="0" src="http://pbatard.github.com/rufus/rufus.png" />
-			<p>Rufus is a small utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
+			<img border="0" src="http://pbatard.github.com/rufus/rufus.png" alt="Rufus" />
+			<p>Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
 			<p>It can be be especially useful for cases where:
 				<ul>
 					<li>you need to create USB installation media from bootable ISOs (Windows, Linux, etc.)</li>
@@ -74,12 +89,10 @@
 			A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page <a href="#ref2"><sup>(2)</sup></a>.</p>
 			<p>Finally, please remember that once formatted, your drive is still usable as before to transfer data: it doesn't have to be dedicated for DOS or ISO installation only.</p>
 			<h2>Download</h2>
-			<p>Two versions of Rufus are provided for your convenience: one with <a href="http://www.freedos.org">FreeDOS</a> support and one without.</p>
-			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.7f.exe">Rufus v1.1.7 with FreeDOS support</a> (415 KB)</li>
-				<li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.1.7.exe">Rufus v1.1.7 <b>without</b> FreeDOS support</a> (154 KB)</li>
+			<p>From version 1.2.0, a single version of Rufus is provided, that includes <a href="http://www.freedos.org">FreeDOS</a> support.</p>
+			<p><ul><li><a href="https://github.com/downloads/pbatard/rufus/rufus_v1.2.0.exe">Rufus v1.2.0</a> (420 KB)</li>
 				<li><a href="https://github.com/pbatard/rufus/downloads">Other versions</a></li></ul></p>
-			<p>Apart from the ability to select FreeDOS rather than the default Microsoft DOS, these versions are exactly the same. If you use a non-US keyboard, FreeDOS is recommended as it supports more keyboard layouts. In both cases, if you choose DOS, Rufus will try to set the keyboard locale for you.<br />
-			If you use plan to use ISO images only, any version will do.</p>
+			<p>If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of the system Rufus runs on. In that case, FreeDOS, which is the default selection, is recommended over MS-DOS as it supports more keyboard layouts.</p>
 			<p>Once downloaded, the application is ready to use &mdash; no installation or other files are necessary.</p>
 			<h2>System Requirements</h2>
 			Windows XP or later, 32 or 64 bit doesn't matter.<br />If elevation is required, you will be prompted for it.
@@ -96,6 +109,16 @@
 			<p>Please use the github <a href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
 			<h2>Versions</h2>
 			<ul>
+				<li>Version 1.2.0 (2012.06.04):<ul>
+					<li>Single version of Rufus, with FreeDOS embedded</li>
+					<li>Add a toggleable advanced options panel</li>
+					<li>Add taskbar progress (Windows 7 or later)</li>
+					<li>Integrate logging output in the application</li>
+					<li>Add bare Syslinux installation for (FAT partitions only)</li>
+					<li>Fixes unavailable boot option with empty card readers (reported by <b>TheHive</b>)</li>
+					<li>Works around the use of non-ISO compliant LiveXP images (reported by <b>TheHive</b>)
+					<li>Various other bugfixes and improvements</li>
+				</ul></li>
 				<li>Version 1.1.7 (2012.04.06):<ul>
 					<li>Fixes wrong bootable disk ID introduced in 1.1.6 (reported by <b>Jeff Byers</b>)</li>
 					<li>Fixes support for minint WinPE 1.x images</li>
@@ -194,11 +217,12 @@
 			</table></p>
 			<a name="ref2">&nbsp;</a>
 			<h2>(2) Non exhaustive list of ISOs Rufus is known to work with</h2>
-			<p><a href="http://www.archlinux.org/">Arch Linux</a>, <a href="http://archbang.org/">Archbang</a>, <a href="http://www.nu2.nu/pebuilder/">BartPE/pebuilder</a>, <a href="http://www.centos.org/">CentOS</a>, <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a>, <a href="http://fedoraproject.org/">Fedora</a>, <a href="http://www.freedos.org/">FreeDOS</a>, <a href="http://www.gentoo.org/">Gentoo</a>, <a href="http://www.gnewsense.org/">gNewSense</a>, <a href="http://www.hiren.info/pages/bootcd">Hiren's Boot CD</a>, <a href="http://knoppix.net/">Knoppix</a>, <a href="http://www.kubuntu.org/">Kubuntu</a>, <a href="http://linuxmint.com/">Linux Mint</a>, <a href="http://pogostick.net/~pnh/ntpasswd/">NT Password Registry Editor</a>, <a href="http://www.opensuse.org/">OpenSUSE</a>, <a href="http://partedmagic.com/doku.php">Parted Magic</a>, <a href="http://www.slackware.com/">Slackware</a>, <a href="https://tails.boum.org/">Tails</a>, <a href="http://trinityhome.org/">Trinity Rescue Kit</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.ultimatebootcd.com/">Ultimate Boot CD</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=140&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows XP (SP2 or later)</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=137&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Server 2003 R2</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Vista</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows 7</a>, <a href="http://windows.microsoft.com/en-US/windows-8/iso">Windows 8 Consumer Preview</a>, etc.</p>
+			<p><a href="http://www.archlinux.org/">Arch Linux</a>, <a href="http://archbang.org/">Archbang</a>, <a href="http://www.nu2.nu/pebuilder/">BartPE/pebuilder</a>, <a href="http://www.centos.org/">CentOS</a>, <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a>, <a href="http://fedoraproject.org/">Fedora</a>, <a href="http://www.freedos.org/">FreeDOS</a>, <a href="http://www.gentoo.org/">Gentoo</a>, <a href="http://www.gnewsense.org/">gNewSense</a>, <a href="http://www.hiren.info/pages/bootcd">Hiren's Boot CD</a>, <a href="http://reboot.pro/forum/52/">LiveXP</a>, <a href="http://knoppix.net/">Knoppix</a>, <a href="http://www.kubuntu.org/">Kubuntu</a>, <a href="http://linuxmint.com/">Linux Mint</a>, <a href="http://pogostick.net/~pnh/ntpasswd/">NT Password Registry Editor</a>, <a href="http://www.opensuse.org/">OpenSUSE</a>, <a href="http://partedmagic.com/doku.php">Parted Magic</a>, <a href="http://www.slackware.com/">Slackware</a>, <a href="https://tails.boum.org/">Tails</a>, <a href="http://trinityhome.org/">Trinity Rescue Kit</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.ultimatebootcd.com/">Ultimate Boot CD</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=140&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows XP (SP2 or later)</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=137&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Server 2003 R2</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows Vista</a>, <a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows 7</a>, <a href="http://windows.microsoft.com/en-US/windows-8/iso">Windows 8 Release Preview</a>, etc.</p>
 		</div>
  		<div class="footer">
 		Copyright (c) 2011-2012 <a href="http://pete.akeo.ie">Pete Batard</a><br/>
-		USB icon by <a href="http://pcunleashed.com/">PC Unleashed</a>
+		USB icon by <a href="http://pcunleashed.com/">PC Unleashed</a><br/>
+		Hosting by <a href="http://neosurge.com">Neosurge</a>
 		</div>
 	</div>
 </body>
